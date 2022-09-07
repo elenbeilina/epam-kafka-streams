@@ -4,5 +4,5 @@ docker run --tty \
            confluentinc/cp-kafkacat \
            bash -c "cat /test-data.txt | kafkacat  \
            -b broker:29092 \
-            -P -t main \
+            -P -t task1-1 \
             -K:"
