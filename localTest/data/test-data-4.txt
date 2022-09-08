@@ -1,0 +1,3 @@
+{"name":"John","company":"EPAM","position":"junior developer","experience":2}
+{"name":"Dmytro","company":"EPAM","position":"developer","experience":5}
+{"name":"Alex","company":"EPAM","position":"senior developer","experience":10}

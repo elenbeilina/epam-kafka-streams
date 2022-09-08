@@ -13,7 +13,6 @@ import org.apache.kafka.streams.kstream.Named;
 import org.apache.kafka.streams.kstream.Printed;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.kafka.annotation.EnableKafkaStreams;
 import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
@@ -22,7 +21,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Configuration
-@EnableKafkaStreams
 @RequiredArgsConstructor
 public class Task2 {
 

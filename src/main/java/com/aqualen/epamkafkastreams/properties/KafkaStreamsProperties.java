@@ -14,5 +14,6 @@ public class KafkaStreamsProperties {
   private String sourceTopic2;
   private String sourceTopic3dash1;
   private String sourceTopic3dash2;
+  private String sourceTopic4;
 
 }
