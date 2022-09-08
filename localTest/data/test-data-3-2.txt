@@ -1,0 +1,6 @@
+1:Batman
+2:Superman
+3:Flash
+4:Green Lantern
+5:Green Arrow
+6:Wonder Woman
