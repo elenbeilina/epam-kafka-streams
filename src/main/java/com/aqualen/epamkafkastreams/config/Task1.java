@@ -14,12 +14,12 @@ import org.springframework.kafka.annotation.EnableKafkaStreams;
 @Configuration
 @EnableKafkaStreams
 @RequiredArgsConstructor
-public class KafkaStreamsConfig {
+public class Task1 {
 
   private final KafkaStreamsProperties kafkaStreamsProperties;
 
   @Bean
-  KStream<String, String> defineStream(StreamsBuilder builder) {
+  KStream<String, String> streamTask1(StreamsBuilder builder) {
     Serde<String> serde = Serdes.String();
 
     KStream<String, String> stream = builder
@@ -29,5 +29,4 @@ public class KafkaStreamsConfig {
 
     return stream;
   }
-
 }
