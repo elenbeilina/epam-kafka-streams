@@ -16,7 +16,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -58,15 +57,15 @@ public class Task2 {
   }
 
   @Bean
-  Map<String, KStream<Integer, String>> mergedLengthenedWordBranchesWithATask2(
+  KStream<Integer, String> mergedLengthenedWordBranchesWithATask2(
       Map<String, KStream<Integer, String>> lengthenedWordBranchesTask2
   ) {
     KStream<Integer, String> longWordsStream = lengthenedWordBranchesTask2.get("words-long");
     KStream<Integer, String> shortWordsStream = lengthenedWordBranchesTask2.get("words-short");
 
-    longWordsStream.merge(shortWordsStream)
-        .print(Printed.toSysOut());
+    KStream<Integer, String> mergedStream = longWordsStream.merge(shortWordsStream);
+    mergedStream.print(Printed.toSysOut());
 
-    return new HashMap<>();
+    return mergedStream;
   }
 }
