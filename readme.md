@@ -179,3 +179,5 @@ There are several steps for full testing process of Kafka streaming application:
     ```
 
 6. Start application.
+
+7. To see metrics: http://localhost:9000/actuator/metrics
